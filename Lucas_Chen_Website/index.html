@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Valorant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .topnav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #010101;
+      color: white;
+    }
+
+    .topnav a.active {
+      background-color: #CB0000;
+      color: white;
+    }
+
+    .intro-container {
+      background-image: url(background.jpg);
+      padding: 100px 0 200px;
+    }
+
+    .introduction {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+      margin: 0 100px;
+    }
+
+    .introduction h1 {
+      color: #CB0000;
+    }
+
+    .topic-container {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .topic-container div {
+      flex: 1;
+      max-width: 40%;
+      padding: 0 10px;
+      text-align: center;
+    }
+
+    .topic-container button {
+      background-color: #CB0000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      margin: 10px;
+      font-size: 16px;
+      width: 40%;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .topic-container button:hover {
+      background-color: #232323;
+    }
+
+    .image-section img {
+      width: 70%;
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .image-section2 img {
+      width: 70%;
+      border-radius: 10px;
+      float: right;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topnav">
+    <a class="active" href="index.html">Valorant</a>
+    <a href="agents.html">Agents</a>
+    <a href="maps.html">Maps</a>
+    <a href="gamemodes.html">Gamemodes</a>
+  </div>
+
+  <div class="intro-container">
+    <div class="introduction">
+      <h1>Welcome to Valorant</h1>
+      <p>In this free-to-play 5v5 team-based game, you'll navigate a world where precise gunplay meets unique
+        agent abilities. Team up, strategize, and engage in thrilling <br>matches as you plant or defuse the Spike.
+        Valorant combines the best of traditional FPS gameplay with strategic character abilities, offering an
+        exhilarating <br>experience where every move matters.</p>
+    </div>
+  </div>
+
+  <div class="topic-container" style="background-color:#fbffd5;">
+    <div>
+      <h2 style="color: #001E4E;">Learn the Agents</h2>
+      <p>Agents are the playable characters in VALORANT with each agent serving<br> as a different class with four
+        abilities. Find out more about the agents <br>in the Agents page.</p>
+      <a href="agents.html">
+        <button>View Agents Here</button>
+      </a>
+    </div>
+    <div class="image-section">
+      <img src="agents_image.jpg" alt="Agents Image" style="float: left;">>
+    </div>
+  </div>
+
+  <div class="topic-container" style="background-color:lightblue">
+    <div class="image-section2">
+      <img src="maps_image.jpg" alt="Maps Image">
+    </div>
+    <div>
+      <h2 style="color: #001E4E;">Know the Maps</h2>
+      <p>There are many different maps in Valorant each with unique aspects and layouts <br>where you would need to
+        adapt your tactics to navigate these dynamic environments<br> causing matches to have depth.</p>
+      <a href="maps.html">
+        <button>View Maps Here</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="topic-container" style="background-color: rgb(195, 240, 195);">
+    <div>
+      <h2 style="color: #001E4E;">Explore the Gamemodes</h2>
+      <p>From fun short minigames with unique aspects to competitive matches where you <br>earn ranked rating, in
+        Valorant there are many different gamemodes to peak<br> your interest. </p>
+      <a href="gamemodes.html">
+        <button>View Gamemodes Here</button>
+      </a>
+    </div>
+    <div class="image-section">
+      <img src="gamemodes_image.jpg" alt="Gamemodes Image">
+    </div>
+  </div>
+</body>
+
+</html>

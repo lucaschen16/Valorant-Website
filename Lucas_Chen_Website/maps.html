@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Maps</title>
+  <style>
+    body {
+      background-color: lightblue;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .topnav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #010101;
+      color: white;
+    }
+
+    .topnav a.active {
+      background-color: #CB0000;
+      color: white;
+    }
+
+    .intro-container {
+      background-image: url(maps_background.jpg);
+      padding-top: 100px;
+      padding-bottom: 200px;
+    }
+
+    .introduction {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .introduction h1 {
+      color: #CB0000;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    .mySlides1,
+    .mySlides2 {
+      display: none
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+      margin-top: 30px;
+    }
+
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background-color: #f1f1f1;
+      color: black;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="index.html">Valorant</a>
+    <a href="agents.html">Agents</a>
+    <a class="active" href="maps.html">Maps</a>
+    <a href="gamemodes.html">Gamemodes</a>
+  </div>
+
+  <div class="intro-container">
+    <div class="introduction">
+      <h1>Welcome to the Maps</h1>
+      <p>Explore the different maps that Valorant has to offer. The name of the map is on one slide and<br> the map
+        layout or minimap on the proceeding slide. The map layout provides<br> information about the sites and callouts.
+      </p>
+    </div>
+  </div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="ascent_image.jpg" style="width:1000px; height:600px";>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="ascent_map.jpg" style="width:1000px; height:600px">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="haven_image.jpg" style="width:1000px; height:600px">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="haven_map.jpg" style="width:1000px; height:600px">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="icebox_image.jpg" style="width:1000px; height:600px">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="icebox_map.jpg" style="width:1000px; height:600px">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="split_image.jpg" style="width:1000px; height:600px">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="split_map.jpg" style="width:1000px; height:600px">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="bind_image.jpg" style="width:1000px; height:600px">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="bind_map.jpg" style="width:1000px; height:600px">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+</BODY>
+
+</HTML>

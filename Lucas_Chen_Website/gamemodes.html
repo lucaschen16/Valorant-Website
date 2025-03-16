@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Gamemodes</title>
+  <style>
+    body {
+      background-color: rgb(195, 240, 195);
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      scroll-snap-type: y mandatory;
+    }
+
+    .topnav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #010101;
+      color: white;
+    }
+
+    .topnav a.active {
+      background-color: #CB0000;
+      color: white;
+    }
+
+    .intro-container {
+      background-image: url(gamemodes_background.jpg);
+      background-size: cover;
+      background-position: center;
+      padding-top: 100px;
+      padding-bottom: 200px;
+    }
+
+    .introduction {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .introduction h1 {
+      color: #CB0000;
+    }
+
+    .gamemode-container {
+      gap: 20px;
+      margin: 20px;
+      scroll-snap-align: center;
+    }
+
+    .gamemode-card {
+      border: 1px solid #000;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      margin: 20px;
+      scroll-snap-align: start;
+    }
+
+    .gamemode-card img {
+      width: 98%;
+      padding-left: 5px;
+      border-radius: 10px;
+    }
+
+    .gamemode-card-content {
+      padding: 15px;
+    }
+
+    .gamemode-card h3 {
+      color: #001E4E;
+      margin-top: 0;
+    }
+
+    .gamemode-card p {
+      color: #333;
+    }
+  </style>
+
+</HEAD>
+
+<BODY>
+  <div class="topnav">
+    <a href="index.html">Valorant</a>
+    <a href="agents.html">Agents</a>
+    <a href="maps.html">Maps</a>
+    <a class="active" href="gamemodes.html">Gamemodes</a>
+  </div>
+
+  <div class="intro-container">
+    <div class="introduction">
+      <h1>Welcome to the Gamemodes</h1>
+      <p>Explore the different fun gamemodes that Valorant has to offer. Each gamemode provides a <br>different type of
+        gameplay.</p>
+    </div>
+  </div>
+
+  <div class="gamemode-container">
+    <div class="gamemode-card">
+      <div class="gamemode-card-content" id="unrated">
+        <h3>Unrated</h3>
+        <p>Unrated (also known as Standard or Normals) is the base game mode in VALORANT. It is a Plant/Defuse mode
+          for two teams of five players where each team plays as either Attacker or Defender. Find out more at the
+          <a href="https://valorant.fandom.com/wiki/unrated" target="_blank">valorant wiki.</a>
+        </p>
+      </div>
+      <img src="unrated.jpg" alt="Unrated Image">
+    </div>
+
+    <div class="gamemode-card">
+      <div class="gamemode-card-content" id="competitive">
+        <h3>Competitive</h3>
+        <p>Competitive (also known as Ranked) is a game mode in VALORANT. It uses the same in-game rules and format as
+          Unrated, but with a focus on higher-stakes competition. Winning each game earns RR (Ranked Rating) while
+          loosing each game costs RR. Find out more at the
+          <a href="https://valorant.fandom.com/wiki/competitive" target="_blank">valorant wiki.</a>
+        </p>
+      </div>
+      <img src="comp.jpg" alt="Competitive Image">
+    </div>
+  </div>
+
+  <div class="gamemode-container">
+    <div class="gamemode-card">
+      <div class="gamemode-card-content" id="swiftplay">
+        <h3>Swiftplay</h3>
+        <p>Swiftplay is a best-of-nine spike (Plant/Defuse) mode. It has most of the same gameplay rules as Unrated
+          but with some changes to adjust for its shorter duration. Find out more at the
+          <a href="https://valorant.fandom.com/wiki/Swiftplay" target="_blank">valorant wiki.</a>
+        </p>
+      </div>
+      <img src="swiftplay.jpg" alt="Swiftplay Image">
+    </div>
+
+    <div class="gamemode-card">
+      <div class="gamemode-card-content" id="spikerush">
+        <h3>Spike Rush</h3>
+        <p>Spike Rush is a faster-paced game mode. Pre-round time is reduced to 20 seconds (usually 30) and game time
+          is reduced to 80 seconds (usually 100). While the attackers have less time to plant, they also have the
+          advantage
+          of each player having a spike. The game ends when one team reaches 4 round wins, teams switch sides after 3
+          rounds.
+          Find out more at the <a href="https://valorant.fandom.com/wiki/Spike_Rush">valorant wiki.</a></p>
+      </div>
+      <img src="SpikeRush.jpg" alt="Spike Rush Image">
+    </div>
+  </div>
+
+  <div class="gamemode-container">
+    <div class="gamemode-card">
+      <div class="gamemode-card-content" id="deathmatch">
+        <h3>Deathmatch</h3>
+        <p>Deathmatch is a multiplayer free-for-all game mode designed to allow players to hone their gunplay mechanics
+          or warm up before playing Competitive. Each player loads into a random map with a random agent that they own.
+          Players start in a brief warm-up phase before the real game starts. Players cannot buy or use abilities but
+          are automatically given Heavy Shields. They can buy whatever weapons they want. Find out more at the
+          <a href=https://valorant.fandom.com/wiki/Deathmatch>valorant wiki.</a>
+        </p>
+      </div>
+      <img src="deathmatch.jpg" alt="Competitive Rankings Image">
+    </div>
+
+    <div class="gamemode-card">
+      <div class="gamemode-card-content" id="escalation">
+        <h3>Escalation</h3>
+        <p>Escalation is a 5v5 gun game type game mode where each kill earns points which leads to another weapon. Find
+          out more at the <a href="https://playvalorant.com/en-us/news/game-updates/new-valorant-mode-escalation/"
+            target="_blank">valorant website.</a></p>
+      </div>
+      <img src="escalation.jpg" alt="Competitive Rankings Image">
+    </div>
+  </div>
+
+  <div class="gamemode-container">
+    <div class="gamemode-card">
+      <div class="gamemode-card-content" id="TDM">
+        <h3>Team Deathmatch</h3>
+        <p>Team Deathmatch is a TDM-style game mode in VALORANT where two teams fight on a small map to get the most
+          kills using a variety of weapons and their agents' abilities. Find out more at the
+          <a href="https://playvalorant.com/en-us/news/game-updates/valorant-team-deathmatch-101/">valorant website.</a>
+        </p>
+      </div>
+      <img src="TDM.jpg" alt="Competitive Rankings Image">
+    </div>
+
+    <div class="gamemode-card">
+      <div class="gamemode-card-content" id="custom">
+        <h3>Custom</h3>
+        <p>Competitive (also known as Ranked) is a game mode in VALORANT. It uses the same in-game rules and format as
+          Unrated, but with a focus on higher-stakes competition. Winning each game earns RR (Ranked Rating) while
+          loosing each game costs RR. Find out more at <a
+            href="https://gamezo.gg/valorant-custom-games-explained-cheats-settings-and-bots/">gamezo.</a></p>
+      </div>
+      <img src="custom.jpg" alt="Competitive Rankings Image">
+    </div>
+  </div>
+
+</BODY>
+
+</HTML>

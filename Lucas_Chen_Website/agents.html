@@ -1,0 +1,410 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Agents</title>
+  <style>
+    body {
+      background-color: #fbffd5;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .topnav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #010101;
+      color: white;
+    }
+
+    .topnav a.active {
+      background-color: #CB0000;
+      color: white;
+    }
+
+    .intro-container {
+      background-image: url(agents_background.jpg);
+      padding-top: 100px;
+      padding-bottom: 200px;
+    }
+
+    .introduction {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .introduction h1 {
+      color: #CB0000;
+    }
+
+    .agent-container {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .agent-card {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 200px;
+      height: 430px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .agent-card img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .agent-card h2 {
+      color: #001E4E;
+    }
+
+    .agent-card p {
+      color: #333;
+    }
+
+    .ability-description {
+      display: none;
+    }
+
+    img.ability-image {
+      width: 100px;
+      background-color: lightblue;
+      border-radius: 5px;
+      border: 1px solid #333333;
+      padding: 5px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<BODY>
+  <div class="topnav">
+    <a href="index.html">Valorant</a>
+    <a class="active" href="agents.html">Agents</a>
+    <a href="maps.html">Maps</a>
+    <a href="gamemodes.html">Gamemodes</a>
+  </div>
+
+  <div class="intro-container">
+    <div class="introduction">
+      <h1>Welcome to the Agents</h1>
+      <p>Learn the different agents with distinct abilities that are in Valorant. There are four different agent
+        classes. <br>Navigate through each agent and click on them to find more information about their abilities.</p>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 30px;">
+    <h2>Controller</h2>
+  </div>
+
+  <div class="agent-container">
+    <!--<a href="#brimstone" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/brimstone" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="brimstone.jpg" alt="Brimstone Image">
+        <h2>Brimstone</h2>
+        <p>Joining from the U.S.A., Brimstone's orbital arsenal ensures his squad always has the advantage. His ability
+          to
+          deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.</p>
+      </div>
+    </a>
+
+    <!--<a href="#viper" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/viper" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="viper.jpg" alt="Viper Image">
+        <h2>Viper</h2>
+        <p>The American Chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and
+          choke
+          the enemy's vision. If the toxins don't kill her prey, her mindgames surely will.</p>
+      </div>
+    </a>
+    <!--<a href="#omen" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/omen" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="omen.jpg" alt="Omen Image">
+        <h2>Omen</h2>
+        <p>A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then
+          lets
+          paranoia take hold as his foe scrambles to learn where he might strike next.</p>
+      </div>
+    </a>
+
+    <!--<a href="#astra" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/astra" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="astra.jpg" alt="Astra Image">
+        <h2>Astra</h2>
+        <p>Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full
+          command of her astral form and a talent for deep strategic foresight, she's always eons ahead of her enemy's
+          next move.</p>
+      </div>
+    </a>
+
+
+    <!--<a href="#harbor" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/harbor" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="harbor.jpg" alt="Harbor Image">
+        <h2>Harbor</h2>
+        <p>Hailing from India’s coast, Harbor storms the field wielding ancient technology with dominion over water. He
+          unleashes frothing rapids and crushing waves to shield his allies, or pummel those that oppose him.</p>
+      </div>
+    </a>
+  </div>
+  <h2 style="text-align: center;">
+    Duelist
+  </h2>
+
+  <div class="agent-container">
+
+    <!--<a href="#phoenix" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/phoenix" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="phoenix.jpg" alt="Phoenix Image">
+        <h2>Phoenix</h2>
+        <p>Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield
+          with
+          flash and flare. Whether he's got backup or not, he'll rush into a fight on his own terms.</p>
+      </div>
+    </a>
+    <!--<a href="#jett" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/jett" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="jett.jpg" alt="Jett Image">
+        <h2>Jett</h2>
+        <p>Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks
+          no one
+          else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.</p>
+      </div>
+    </a>
+    <!--<a href="#reyna" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/reyna" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="reyna.jpg" alt="Reyna Image">
+        <h2>Reyna</h2>
+        <p>Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her
+          capability
+          is only limited by her raw skill, making her highly dependent on performance.</p>
+      </div>
+    </a>
+    <!--<a href="#raze" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/raze" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="raze.jpg" alt="Raze Image">
+        <h2>Raze</h2>
+        <p>Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle,
+          she
+          excels at flushing entrenched enemies and clearing tight spaces with a generous dose of "boom."</p>
+      </div>
+    </a>
+    <!--<a href="#yoru" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/yoru" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="yoru.jpg" alt="Yoru Image">
+        <h2>Yoru</h2>
+        <p>Japanese native, Yoru, rips holes straight through reality to infiltrate enemy lines unseen. Using
+          deception and
+          aggression in equal measure, he gets the drop on each target before they know where to look.</p>
+      </div>
+    </a>
+
+    <!--<a href="#neon" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/neon" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="neon.jpg" alt="Neon Image">
+        <h2>Neon</h2>
+        <p>Filipino Agent Neon surges forward at shocking speeds, discharging bursts of bioelectric radiance as fast
+          as her
+          body generates it. She races ahead to catch enemies off guard, then strikes them down quicker than
+          lightning.</p>
+      </div>
+    </a>
+  </div>
+  </div>
+  <h2 style="text-align: center;">
+    intiator
+  </h2>
+
+  <div class="agent-container">
+    <!--<a href="#sova" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/sova" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="sova.jpg" alt="Sova Image">
+        <h2>Sova</h2>
+        <p>Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless
+          efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you
+          cannot
+          hide.</p>
+      </div>
+    </a>
+    <!--<a href="#breach" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/breach" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="breach.jpg" alt="Breach Image">
+        <h2>Breach</h2>
+        <p>Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively clear a path through
+          enemy
+          ground. The damage and disruption he inflicts ensures no fight is ever fair.</p>
+      </div>
+    </a>
+    <!--<a href="#skye" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/skye" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="skye.jpg" alt="Skye Image">
+        <h2>Skye</h2>
+        <p>Hailing from Australia, Skye and her band of beasts trail-blaze the way through hostile territory. With her
+          creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye’s
+          side.
+        </p>
+      </div>
+    </a>
+    <!--<a href="#kayo" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/kay-o" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="kayo.jpg" alt="Kay/o Image">
+        <h2>Kay/o</h2>
+        <p>KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to Suppress enemy
+          abilities dismantles his opponents' capacity to fight back, securing him and his allies the ultimate edge.
+        </p>
+      </div>
+    </a>
+    <!--<a href="#fade" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/fade" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="fade.jpg" alt="Fade Image">
+        <h2>Fade</h2>
+        <p>Turkish bounty hunter, Fade, unleashes the power of raw nightmares to seize enemy secrets. Attuned with
+          terror
+          itself, she hunts targets and reveals their deepest fears—before crushing them in the dark.</p>
+      </div>
+    </a>
+    <!--<a href="#gekko" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/gekko" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="gekko.jpg" alt="Gekko Image">
+        <h2>Gekko</h2>
+        <p>Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering
+          enemies
+          out of the way, with Gekko chasing them down to regroup and go again.</p>
+      </div>
+    </a>
+  </div>
+
+  <h2 style="text-align: center;">
+    Sentinel
+  </h2>
+
+  <div class="agent-container">
+    <!--<a href="#kj" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/killjoy" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="kj.jpg" alt="Killjoy Image">
+        <h2>Killjoy</h2>
+        <p>The genius of Germany. Killjoy secures the battlefield with ease using her arsenal of inventions. If the
+          damage
+          from her gear doesn't stop her enemies, her robots' debuff will help make short work of them.</p>
+      </div>
+    </a>
+
+    <!--<a href="#cypher" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/cypher" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="cypher.jpg" alt="Cypher Image">
+        <h2>Cypher</h2>
+        <p>The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy's
+          every
+          move. No secret is safe. No maneuver goes unseen. Cypher is always watching.</p>
+      </div>
+    </a>
+
+    <!--<a href="#sage" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/sage" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="sage.jpg" alt="Sage Image">
+        <h2>Sage</h2>
+        <p>The stronghold of China, Sage creates safety for herself and her team wherever she goes. Able to revive
+          fallen
+          friends and stave off aggressive pushes, she provides a calm center to a hellish fight.</p>
+      </div>
+    </a>
+
+    <!--<a href="#chamber" style="text-decoration: none;">-->
+    <a href="https://playvalorant.com/en-us/agents/chamber" style="text-decoration: none;" target="_blank">
+      <div class="agent-card">
+        <img src="chamber.jpg" alt="Chamber Image">
+        <h2>Chamber</h2>
+        <p>Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision. He
+          leverages
+          his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.
+        </p>
+      </div>
+    </a>
+  </div>
+
+  <!--
+<div id="brimstone" style=margin-left:300px;>
+<h3>Brimstone</h3>
+<div id="ability-container">
+  <img src="incendiary.jpg" alt="Incendiary" id="ability1" class="ability-image" style=margin-left:20px;>
+  <img src="ability2.jpg" alt="Agent 1 Ability: [Ability Name]" id="ability2" class="ability-image">
+  </div>
+-->
+
+  <div class="ability-description" id="ability1-description">
+    <h3>Ability 1 Description</h3>
+    <p>This is the description of Ability 1.</p>
+  </div>
+
+  <div class="ability-description" id="ability2-description">
+    <h3>Ability 2 Description</h3>
+    <p>This is the description of Ability 2.</p>
+  </div>
+  </div>
+
+  <script>
+    function showDescription(descriptionId) {
+      var descriptions = document.getElementsByClassName('ability-description');
+      for (var i = 0; i < descriptions.length; i++) {
+        descriptions[i].style.display = 'none';
+      }
+
+      var clickedDescription = document.getElementById(descriptionId);
+      if (clickedDescription) {
+        clickedDescription.style.display = 'block';
+      }
+    }
+  </script>
+
+</body>
+
+</html>
