@@ -1,0 +1,1 @@
+A website about Valorant with information on agents, maps, and game features. Built to practice front-end structure, styling, and interactivity. 
